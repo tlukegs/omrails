@@ -1,0 +1,28 @@
+/*Change the font*/
+/*$baseFontFamily: Normal400;
+@import url(http://fonts.googleapis.com/css?family=Denk+One);
+*/
+$btnPrimaryBackground: red;
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
