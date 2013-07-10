@@ -1,12 +1,15 @@
+<% if user_signed_in? %>
+      			<h1> MegaMegaMegainitinitinit<h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to Luke's OMRAILS app</h1>
 
-<div class="hero-unit">
-<h1>Welcome to Luke's OMRAILS app</h1>
-
-<p>You found the homepage for the 
-	<%= link_to "T Luke Sherwin", "www.tlukesherwin.com" %>
-	Your one stop shop for outrage
-</p>
-<p>
-	<%= link_to "Sign Up Now", "www.tlukesherwin.com", class: "btn btn-primary btn-large" %>
-</p>
+	<p>You found the homepage for the 
+		<%= link_to "T Luke Sherwin", "www.tlukesherwin.com" %>
+		Your one stop shop for outrage
+	</p>
+	<p>
+		<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
+	</p>
 </div>
+<% end %>
